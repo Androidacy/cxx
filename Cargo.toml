@@ -4,7 +4,7 @@ version = "1.0.72" # remember to update html_root_url
 authors = ["David Tolnay <dtolnay@gmail.com>"]
 edition = "2018"
 rust-version = "1.48"
-links = "cxxbridge1"
+# links = "cxxbridge1"
 license = "MIT OR Apache-2.0"
 description = "Safe interop between Rust and C++"
 repository = "https://github.com/dtolnay/cxx"
@@ -25,7 +25,7 @@ std = ["alloc"]
 
 [dependencies]
 cxxbridge-macro = { version = "=1.0.72", path = "macro" }
-link-cplusplus = "1.0"
+# link-cplusplus = "1.0"
 
 [build-dependencies]
 cc = "1.0.49"

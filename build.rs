@@ -1,9 +1,9 @@
 use std::env;
-use std::path::Path;
+// use std::path::Path;
 use std::process::Command;
 
 fn main() {
-    cc::Build::new()
+    /* cc::Build::new()
         .file("src/cxx.cc")
         .cpp(true)
         .cpp_link_stdlib(None) // linked via link-cplusplus crate
@@ -18,7 +18,7 @@ fn main() {
     if let Some(manifest_dir) = env::var_os("CARGO_MANIFEST_DIR") {
         let cxx_h = Path::new(&manifest_dir).join("include").join("cxx.h");
         println!("cargo:HEADER={}", cxx_h.to_string_lossy());
-    }
+    } */
 
     if let Some(rustc) = rustc_version() {
         if rustc.minor < 48 {
